@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Stylized volcano landscape</title>
+  <desc id="desc">A minimalist illustration of a volcano with lava glow, basalt slopes, and ash plume set against a warm gradient sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffead1"/>
+      <stop offset="50%" stop-color="#f8d3a2"/>
+      <stop offset="100%" stop-color="#f2b07a"/>
+    </linearGradient>
+    <linearGradient id="lava" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8a3c"/>
+      <stop offset="100%" stop-color="#d63e1a"/>
+    </linearGradient>
+    <linearGradient id="slope" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2b2d31"/>
+      <stop offset="100%" stop-color="#1c1e24"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.7">
+      <stop offset="0%" stop-color="rgba(255,189,105,0.45)"/>
+      <stop offset="100%" stop-color="rgba(255,189,105,0)"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#sky)" />
+  <ellipse cx="620" cy="540" rx="520" ry="280" fill="url(#glow)" />
+
+  <path d="M250 620 L600 200 L950 620 Z" fill="url(#slope)" />
+  <path d="M430 470 C520 420 680 420 770 470 L735 540 C660 500 540 500 465 540 Z" fill="#1f2127" opacity="0.7" />
+
+  <path d="M560 260 L640 260 L660 200 L540 200 Z" fill="#15171c" />
+  <path d="M560 260 L640 260 L635 300 C600 315 580 315 565 300 Z" fill="url(#lava)" />
+
+  <path d="M600 180 C620 150 680 130 710 150 C690 180 650 200 640 220 C620 220 590 210 580 190 Z" fill="#f2c335" opacity="0.55" />
+
+  <circle cx="600" cy="540" r="18" fill="#f2c335" opacity="0.3" />
+  <circle cx="720" cy="520" r="14" fill="#f2c335" opacity="0.2" />
+  <circle cx="480" cy="560" r="14" fill="#f2c335" opacity="0.2" />
+
+  <path d="M640 220 C700 240 760 240 800 200 C820 230 780 270 720 260 C700 280 660 280 630 260 Z" fill="#dfe4ea" opacity="0.7" />
+  <path d="M600 210 C560 200 520 190 500 160 C470 190 510 230 560 235 C580 250 620 250 650 235 Z" fill="#c7ced8" opacity="0.6" />
+</svg>

@@ -1,0 +1,158 @@
+/* assets/scss/custom.scss */
+
+/* Volcanic palette + typography */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root{
+  --obsidian:#0f1115;
+  --ash:#8b919f;
+  --pumice:#f8f5f2;
+  --lava:#e24a1a;
+  --sulfur:#f2c335;
+  --basalt:#1c1e24;
+  --teal-hydro:#0b6e6b;
+  --glow:#ffe1c7;
+}
+
+body{
+  font-family:'Work Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  background:radial-gradient(circle at 20% 20%, #fff3e5 0, #f7f2ef 35%, #f3f4f6 70%);
+  color:var(--obsidian);
+  letter-spacing:.01em;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:'Space Grotesk','Helvetica Neue',Arial,sans-serif;
+  letter-spacing:-0.02em;
+  color:var(--basalt);
+}
+
+a{
+  color:var(--lava);
+  text-decoration-color:rgba(226,74,26,.35);
+  transition:color .2s ease,text-decoration-color .2s ease;
+}
+a:hover{
+  color:#b53811;
+  text-decoration-color:currentColor;
+}
+
+.navbar{
+  background:rgba(255,248,236,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(226,74,26,.08);
+}
+.navbar .navbar-brand,
+.navbar-nav .nav-link{
+  color:var(--basalt);
+  font-weight:600;
+}
+.navbar-nav .nav-link:hover{
+  color:var(--lava);
+}
+
+.button,.btn,button,.btn-primary{
+  background:var(--lava);
+  border:none;
+  color:white;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(226,74,26,.24);
+}
+.button:hover,.btn:hover{
+  filter:brightness(0.95);
+  box-shadow:0 8px 18px rgba(226,74,26,.18);
+}
+
+.wg-hero{
+  position:relative;
+  overflow:hidden;
+  color:#f8f5ef;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(242,195,53,.16), transparent 32%),
+    radial-gradient(circle at 80% 10%, rgba(35,150,143,.12), transparent 25%),
+    linear-gradient(135deg, #1c1e24 0%, #1c1e24 45%, #2f1b16 100%);
+}
+.wg-hero::after{
+  content:'';
+  position:absolute;
+  inset:-20%;
+  background:
+    radial-gradient(ellipse at 30% 60%, rgba(226,74,26,.18), transparent 45%),
+    radial-gradient(ellipse at 75% 40%, rgba(242,195,53,.1), transparent 35%);
+  mix-blend-mode:screen;
+  opacity:.9;
+}
+.wg-hero .container{ position:relative; z-index:1; }
+.wg-hero .hero-title{ color:#fef5eb; }
+.wg-hero .hero-lead{
+  color:#f9e5d5;
+  max-width:36rem;
+}
+.wg-hero .btn,
+.wg-hero .button,
+.wg-hero button{
+  background:var(--sulfur);
+  color:#111;
+}
+.wg-hero .btn:hover{ box-shadow:0 10px 20px rgba(242,195,53,.28); }
+
+.card,.article-container,.wg-collection{
+  background:linear-gradient(180deg, #fff 0%, #fff9f3 100%);
+  border:1px solid rgba(12,12,16,.06);
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.card:hover,.article-container:hover,.wg-collection:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 40px rgba(0,0,0,.08);
+}
+
+.home-section .section-heading{ color:var(--basalt); }
+
+blockquote{
+  border-left:4px solid var(--lava);
+  padding-left:1rem;
+  color:var(--basalt);
+  background:rgba(226,74,26,.05);
+}
+
+/* Tables */
+table{ width:100%; border-collapse:collapse; margin:1rem 0; }
+th,td{ padding:.65rem .8rem; border-bottom:1px solid #e5e7eb; }
+thead th{ background:#fff8ec; color:#3a2a1a; }
+tbody tr:hover{ background:#fffefb; }
+
+.badge-deadline{
+  display:inline-block;
+  padding:.25rem .6rem;
+  border-radius:.6rem;
+  background:var(--sulfur);
+  color:#111;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+/* Bibliography styling */
+.biblio-actions{
+  display:flex; flex-wrap:wrap; gap:.75rem; align-items:center; margin:1.25rem 0 1.5rem;
+}
+.biblio-actions .btn-primary{
+  background:var(--lava); color:white; border:none; border-radius:10px; padding:.55rem 1rem;
+  box-shadow:0 10px 25px rgba(226,74,26,.2);
+}
+.biblio-note{ color:var(--ash); font-size:.95rem; }
+
+.biblio-list{ display:grid; gap:1rem; }
+.biblio-item{
+  background:white;
+  border:1px solid rgba(12,12,16,.06);
+  border-radius:14px;
+  padding:1rem 1.1rem;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+.biblio-meta{ font-size:.9rem; color:var(--ash); margin-bottom:.15rem; }
+.biblio-title{ font-weight:700; color:var(--basalt); line-height:1.35; margin-bottom:.2rem; }
+.biblio-authors{ color:var(--ash); margin-bottom:.25rem; }
+.biblio-link{ color:var(--teal-hydro); font-weight:600; word-break:break-all; }

@@ -1,0 +1,27 @@
+/* Hugo Blox color theme: VOLCANO */
+:root {
+  /* Lava Primary Palette */
+  --hb-primary-50-rgb: 255 241 236;
+  --hb-primary-100-rgb: 255 229 219;
+  --hb-primary-200-rgb: 252 210 190;
+  --hb-primary-300-rgb: 248 173 143;
+  --hb-primary-400-rgb: 244 135 94;
+  --hb-primary-500-rgb: 226 74 26;
+  --hb-primary-600-rgb: 192 52 12;
+  --hb-primary-700-rgb: 151 41 10;
+  --hb-primary-800-rgb: 120 34 12;
+  --hb-primary-900-rgb: 88 27 10;
+  --hb-primary-950-rgb: 46 12 4;
+  /* Hydrothermal Secondary Palette */
+  --hb-secondary-50-rgb: 232 247 246;
+  --hb-secondary-100-rgb: 204 236 233;
+  --hb-secondary-200-rgb: 161 219 212;
+  --hb-secondary-300-rgb: 117 201 193;
+  --hb-secondary-400-rgb: 73 175 167;
+  --hb-secondary-500-rgb: 35 150 143;
+  --hb-secondary-600-rgb: 11 110 107;
+  --hb-secondary-700-rgb: 8 88 86;
+  --hb-secondary-800-rgb: 6 70 68;
+  --hb-secondary-900-rgb: 4 55 54;
+  --hb-secondary-950-rgb: 2 31 32;
+}
