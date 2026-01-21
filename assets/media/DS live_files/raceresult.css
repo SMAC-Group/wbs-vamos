@@ -1,0 +1,146 @@
+<style type="text/css">
+.RRPublish {
+  font-size: 98%;
+}
+.RRPublish div.Tile1 {
+border: none;
+background-color:transparent;
+box-shadow:none;
+}
+.RRPublish div.Tile {
+  width:100%;
+  margin: 0px;
+  background-color:transparent;
+  border-radius:1px;
+  border:none;
+}
+.RRPublish div.Tiles {
+  max-width: 1120px;
+}
+.RRPublish div.TileHead {
+  background-color:#4f4f4f;
+  height: 30px;text-align;
+  box-shadow:none;
+}
+.RRPublish div.TileHeadText {
+  padding-left: 12px;
+}
+.RRPublish a {
+  border-bottom: none;
+}
+tbody tr:hover td, tbody tr:hover th {
+  background: transparent;
+  color:#333;
+}
+.ListHeaderFooter {
+  display: none;
+}
+table {
+  margin:0px;
+}
+.RRPublish tr:nth-child(2n+1), .divDetailsResults tr:nth-child(2n+1) {
+  background:#f9f9f9;
+}
+.RRPublish .tablesorter-no-sort tr {
+  background: none;
+}
+.RRPublish div.ListControlSearch {
+  width:100%;
+}
+.RRPublish table.MainTable {
+  font-size: 85%
+}
+.RRPublish > div.ListControl > div.ListControlSearch > input {
+  height: 27px;
+}
+.RRPublish div.ListHeaderFooter + div {
+  padding: 0!important;
+  margin: 0!important;
+}
+.RRPublish div.ListHeaderFooter + div > img {
+  display: none !important;
+}
+.RRPublish div.ListHeaderFooter + div > div {
+  opacity: 0!important;
+  height:  0!important;
+  width: 0!important;
+}
+.RRPublish div.Tiles + div + div {
+  display: none !important;
+  opacity: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.RRPublish div.Tiles + div + div > img {
+  display: none !important;
+}
+
+.RRPublish div.Tiles + div + div > div {
+  background-image: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.RRPublish table.MainTable th {
+  background:white;
+}
+.RRPublish table.MainTable td {
+  padding: 2px !important;
+}
+.RRPublish > div.Tiles > div > div {
+  color:#000;
+  background:#fff;
+  border-bottom: 2px solid #ddd;
+  font-weight: bold;
+  height: auto
+}
+.RRPublish .TilesList img {
+  display:none;
+}
+.RRPublish div.ListControl {
+  background-color:#fff;
+}
+.RRPublish tr.Hover:hover {
+  background-color: #f5f5f5
+}
+
+.RRPublish .TilesList tr:nth-child(2n+1) {
+  background:#f9f9f9;
+  border-bottom:1px solid #ddd;
+}
+.RRPublish .TilesList tr:nth-child(2n) {
+  background:#fff;
+  border-bottom:1px solid #ddd;
+}
+.RRPublish > div.Tiles > div {
+  border:none;
+}
+.RRPublish > div.Tiles > div > table > tbody > tr > td {
+   color:#C3112F;
+}
+
+.RRPublish table.MainTable td.listGrouping {
+  background-color:#fff;
+  color:#000;
+}
+/*
+.RRPublish div.MainDiv + div {
+  display: none !important;
+  opacity: 0 !important;
+}
+*/
+.RRPublish > div.MainDiv + div {
+  padding: 0!important;
+  margin: 0!important;
+}
+
+.RRPublish > div.MainDiv + div > img {
+  display: none !important;
+}
+
+.RRPublish > div.MainDiv + div > div {
+  opacity: 0!important;
+  height:  0!important;
+  width: 0!important;
+}
+</style>

@@ -1,0 +1,236 @@
+html {
+	position: relative;
+	min-height: 100%;
+	overflow-y: scroll;
+}
+
+body {
+	margin-top: 80px;
+    padding-right: 0 !important;
+}
+
+#main-nav {
+    padding-right: 0 !important;
+}
+
+a {
+	color: #C3112F;
+}
+
+a:focus, a:hover {
+	color: #8e001a;
+}
+
+.btn-link {
+	color: #C3112F;
+}
+
+.btn-link:focus, .btn-link:hover {
+	color: #8e001a;
+}
+
+h1 {
+	font-size: 20px;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+table>tbody>tr>td {
+	padding: 2px !important;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	padding: 2px !important;
+}
+
+#tblRaceStatus thead>tr>th {
+	padding: 8px 30px 8px 8px !important;
+}
+
+#tblRaceStatus tbody>tr>td {
+	padding: 2px 30px 2px 8px !important;
+}
+
+.pagination {
+	margin: 0 0 0 0;
+}
+
+.pagination-sm>li>a, .pagination-sm>li>span {
+	padding: 5px 3px;
+}
+
+.pagination>li>a, .pagination>li>span {
+	color: #C3112F;
+}
+
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+	color: #8e001a;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+	background-color: #C3112F;
+	border-color: #C3112F;
+}
+
+.navbar-brand {
+	padding-top: 10px;
+}
+
+.navbar-default {
+	background-color: #ffffff;
+	border-color: #EAECEF;
+}
+
+.navbar-default .navbar-nav>li>a, .dropdown-menu>li>a {
+	color: #656770;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a>span.main-nav {
+	border-bottom: 2px solid #CFD0D7;
+	padding-bottom: 5px;
+}
+
+
+.navbar-default .navbar-nav>.active>a>span.main-nav {
+	border-bottom: 2px solid #AA1E1E;
+	padding-bottom: 5px;
+}
+
+.racestatus {
+	color: gray;
+	font-style: italic;
+}
+
+.racestatusLive {
+	color: white;
+	font-style: italic;
+	background-color: red;
+	padding: 0 5px;
+}
+
+.googlemaps {
+	height: 300px;
+	//width: 100%;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	.table-responsive {
+		border: 0;
+	}
+
+	#map {
+		height: 250px;
+	}
+
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		color: white;
+	}
+}
+
+@media print {
+	a[href]:after {
+		content: "";
+	}
+}
+
+@media only print, print {
+	body.non-print .container,
+	body.non-print footer,
+	.modal-backdrop.toPrint {
+		display: none !important;
+		visibility: hidden !important;
+	}
+
+	.modal.toPrint {
+		position: relative;
+		overflow: hidden;
+		visibility:visible;
+		width: 100%;
+		font-size: 80%;
+	}
+
+	.modal.toPrint .nav .li {
+		visibility: hidden;
+	}
+
+	.modal.toPrint .nav .li.active {
+		visibility: visible;
+	}
+}
+
+/* workaround webkit bug: https://github.com/twbs/bootstrap/issues/17695 */
+.modal { -webkit-overflow-scrolling: auto; }
+
+/* Fix horizontal scroll */
+.table-responsive {
+	overflow-x: inherit;
+}
+
+#tickerList li {
+	background-color: rgb(221, 221, 221);
+	padding: 5px 10px;
+}
+
+.select2-container--bootstrap .select2-results__option .select2-results__option {
+  padding: 6px 24px;
+}
+
+.select2-container--bootstrap .select2-results__group {
+  color: black;
+  font-size: inherit;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #555 !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #555 !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #555 !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #555 !important;
+}
+
+.progress {
+	border-radius: 0;
+}
+
+.tickerItem {
+	padding: 10px;
+}
+.tickerItem:nth-child(even) {
+	background-color: ##FAFAFA;
+}
+
+.cc-window {
+	padding-top: 5px!important;
+	padding-bottom: 5px!important;
+}
+
+.cc-message {
+	font-size: 14px;
+}
+
+.modal-dialog {
+	margin-top: 110px;
+}
